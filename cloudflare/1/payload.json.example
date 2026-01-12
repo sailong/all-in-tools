@@ -1,0 +1,33 @@
+// payload.json.example
+// 这是一个带注释的示例文件（JSON 本身不支持注释）。
+// 将此文件作为示例阅读或复制为纯 JSON 文件用于实际 PUT（移除注释）。
+{
+  // 顶层 config
+  "config": {
+    "ingress": [
+      // 规则 0：将 hostname bash.ccwu.cc 的流量转发到本机 127.0.0.1:443（HTTPS 回源）
+      {
+        "service": "http://127.0.0.1:443",
+        "hostname": "bash.ccwu.cc",
+        "originRequest": {}
+      },
+
+      // 规则 1：将 www.csl.cs.do 转发到本地 35001
+      {
+        "service": "http://localhost:35001",
+        "hostname": "www.csl.cs.do",
+        "originRequest": {}
+      },
+
+      // 最后一条：默认回源规则，未匹配到前面 hostname 时返回 404
+      {
+        "service": "http_status:404"
+      }
+    ],
+
+    // warp-routing 配置：是否开启 WARP 路由
+    "warp-routing": {
+      "enabled": false
+    }
+  }
+}
