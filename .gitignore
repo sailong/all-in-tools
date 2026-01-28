@@ -1,5 +1,6 @@
 .git
 .idea
 .vscode
+.venv
 run
 cloudflare/1/payload.json
