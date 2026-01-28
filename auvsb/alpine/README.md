@@ -28,7 +28,7 @@
 ---
 
 # 下载脚本 (示例)
-wget -O auvsb.sh [https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/alpine/aubsb.sh](https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/alpine/aubsb.sh)
+wget -O auvsb.sh [https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/alpine/auvsb.sh](https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/alpine/auvsb.sh)
 
 # 赋予执行权限
 chmod +x auvsb.sh
