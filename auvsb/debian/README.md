@@ -81,6 +81,3 @@
 *   脚本修改了 Systemd 服务配置，卸载时会尝试清理。
 *   请确保服务器端口未被防火墙拦截（Cloudflare Tunnel 模式除外）。
 *   脚本中部分功能依赖 `curl`, `wget`, `openssl` 等工具，会自动尝试安装。
-
-## 🤝 贡献
-欢迎提交 Issue 或 Pull Request 改进此脚本。
