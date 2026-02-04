@@ -28,10 +28,17 @@
 *   **架构**: AMD64 (x86_64) 或 ARM64
 *   **权限**: 需要 Root 权限运行
 
-## 🚀 快速开始
+## 🚀 快速安装
+    ```bash
+    bash <(curl -Ls https://sl.bluu.pl/DrQC)
+    ```
+
+## 🚀 下载安装
 
 1.  **下载脚本**
-    将 `auvsb.sh` 下载到您的服务器。
+    ```bash
+    wget -O auvsb.sh https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/debian/auvsb.sh
+    ```
 
 2.  **赋予执行权限**
     ```bash
