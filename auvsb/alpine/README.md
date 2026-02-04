@@ -27,23 +27,23 @@
 
 ---
 
-# 一键运行
+## 🚀 一键运行
 ```bash
 bash <(curl -Ls https://sl.bluu.pl/GBYJ)
 ```
 ---
 
-# 下载脚本 (示例)
+## 📥 下载脚本 (示例)
 ```bash
 wget -O auvsb.sh https://raw.githubusercontent.com/sailong/all-in-tools/refs/heads/main/auvsb/alpine/auvsb.sh
 ```
 
-# 赋予执行权限
+## 📋 赋予执行权限
 ```bash
 chmod +x auvsb.sh
 ```
 
-# 运行脚本
+## 🚀 运行脚本
 ```bash
 ./auvsb.sh
 ```
