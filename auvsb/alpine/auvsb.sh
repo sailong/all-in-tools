@@ -395,8 +395,8 @@ add_node() {
             [ -z "$DEST" ] && DEST="www.amazon.com"
             
             KEYS=$($SB_BIN generate reality-keypair)
-            PRIV=$(echo "$KEYS" | awk -F ": " '/Private/{print $2}' | tr -d ' \r\n')
-            PUB=$(echo "$KEYS" | awk -F ": " '/Public/{print $2}' | tr -d ' \r\n')
+            PRIV=$(echo "$KEYS" | awk -F ":" '/Private/{print $2}' | tr -d ' \r\n')
+            PUB=$(echo "$KEYS" | awk -F ":" '/Public/{print $2}' | tr -d ' \r\n')
             SID=$(openssl rand -hex 8)
             
             FILE="vless-reality-$PORT"
