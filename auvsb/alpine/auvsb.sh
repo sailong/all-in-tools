@@ -86,7 +86,7 @@ install_sb() {
     mkdir -p "$BASE_DIR" "$NODE_DIR"
 
     ARCH=$(uname -m)
-    [ "$ARCH" = "x86_64" ] && SB_ARCH="linux-amd64" || SB_ARCH="linux-arm64"
+    [ "$ARCH" = "x86_64" ] && SB_ARCH="linux-amd64-musl" || SB_ARCH="linux-arm64-musl"
 
     LATEST_VER=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | awk -F '"' '/tag_name/{print $4}' | sed 's/^v//')
     
